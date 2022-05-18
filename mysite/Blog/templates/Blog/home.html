@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+  Posts
+{% endblock title %}
+{% block content %}
+  <div class="container">
+
+  
+<h1>Posts</h1>
+<ul>
+  {% for post in object_list %}
+  <li><a href="{% url 'detailpost' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}
+    {{ post.author.last_name }} {{ post.author.email}} <br>
+    {{ post.body }}</li>
+    {% empty %}
+    <li>No posts yet.</li>
+    {% endfor %}
+    </ul>
+  </div>
+    {% endblock content %}
