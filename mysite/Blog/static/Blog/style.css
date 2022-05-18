@@ -1,0 +1,17 @@
+.blog-home h1{
+    font-size: 5rem;
+    
+}
+
+.blog-home .title {
+    color:rgb(0, 157, 192);
+}
+
+.blog-home li, ul , ol{
+    font-size:25px;
+}
+
+
+.detail h1{
+    font-size:30px;
+}
