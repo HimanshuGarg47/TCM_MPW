@@ -1,0 +1,382 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Home/css/bootstrap.min.css' %}">
+   <!-- style css -->
+   <link rel="stylesheet" href="{% static 'Home/css/style.css' %}">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="{% static 'Home/css/responsive.css' %}">
+   <!-- fevicon -->
+   <link rel="icon" href="{% static 'Home/images/fevicon.png' %}" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="{% static 'Home/css/jquery.mCustomScrollbar.min.css' %}">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+
+    <link rel="stylesheet" href="{% static 'Home/css/team.css' %}">
+
+    <title>Team</title>
+</head>
+<body>
+    
+    
+    
+    
+    <div id="canvas">
+        <div id="box_wrapper">
+            
+        <!-- template sections -->
+
+        <!--topline section visible only on small screens|-->
+        
+        <!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
+        
+        
+        
+        
+        
+        <section class="page_title ls s-py-50 corner-title ls invise overflow-visible">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Our Team</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#pres">Mentors</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#supercore">Executive Board</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="#core">Core Members</a>
+                            </li>
+                        </ol>
+                        <div class="divider-15 d-none d-xl-block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pres"
+        class="s-pt-130 s-pb-15 s-pb-md-50 s-pt-xl-100 s-pb-lg-30 overflow-visible s-parallax testimonials-sliders main-testimonials ds"
+        style="background-position: 50% 1px;">
+        <div class="corner ls ms"></div>
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h1>MENTORS</h1>
+            </div>
+            <div class="row c-mt-30 c-mt-md-0">
+                
+                <div class="divider-20"></div>
+                
+                <div class="divider-40 d-none d-md-block"></div>
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-loaded owl-drag owl-theme" data-autoplay="false"
+                    data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="false"
+                    data-dots="true" id="quote">
+                    
+                    
+                    
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                        style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2400px;">
+                        <div class="owl-item active" style="width: 1170px; margin-right: 30px;">
+                            <div class="quote-item" data-index="0">
+                                <div class="quote-image">
+                                    <img src="{% static 'Home/images/shashibala.jpg' %}" alt="">
+                                </div>
+                                <p class="small-text author-job">
+                                    PRESIDENT
+                                </p>
+                                <h5>
+                                    <a href="http://tpc.ac.in/teacher-profile.php?id=16" target="_blank">Shashi Bala</a>
+                                </h5>
+                                <p>
+                                    <em class="big">
+                                        TPO & Lecturer |  Computer Science and Engineering Department
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1170px; margin-right: 30px;">
+                            <div class="quote-item" data-index="1">
+                                <div class="quote-image">
+                                                <img src="{% static 'Home/images/HARJINDER_SINGH.jpg' %}" alt="">
+                                            </div>
+                                            <p class="small-text author-job">
+                                                VICE PRESIDENT
+                                            </p>
+                                            <h5>
+                                                <a href="http://tpc.ac.in/teacher-profile.php?id=17" target="_blank">Harjinder Singh</a>
+                                            </h5>
+                                            <p>
+                                                <em class="big">
+                                                    Lab Assistant, Computer Science and Engineering Department
+                                                </em>
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-nav disabled">
+                                <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
+                                <div class="owl-next"><i class="fa fa-angle-right"></i></div>
+                            </div>
+                            <div class="owl-dots">
+                                <div class="owl-dot active"><span></span></div>
+                                <div class="owl-dot"><span></span></div>
+                            </div>
+                        </div>
+                        <!-- .testimonials-slider -->
+                    </div>
+                    <div class="divider-55 d-none d-md-block"></div>
+                    <div class="text-center img-wrap col-md-12">
+                        <img src="/static/img/vertical_line2.png" alt="">
+                    </div>
+                    <div class="divider-10 d-none d-md-block"></div>
+                </div>
+            </div>
+            
+            <div class="corner corner-light"></div>
+        </section>
+        
+        <section id="supercore" class="ls s-pt-75 s-pb-100 s-pb-lg-130 team">
+            <div class="divider-40 d-none d-xl-block"></div>
+            <div class="container text-center">
+                <div class="row c-mb-30 justify-content-center">
+                    <!-- <div class="col-md-12 text-center">
+                        <h1><span style="font-weight: bolder">EXECUTIVE BOARD</span></h1>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="/media/team/images/Jashanjot_Singh_Bindra.jpeg" alt="Jashanjot Singh Bindra">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Jashanjot Singh Bindra
+                                </h6>
+                                <p class="small-text color-main">
+                                    GENERAL SECRETARY
+                                </p>
+                                <p class="social-icons">
+                                
+                                    <a href="https://www.linkedin.com/in/jashanjot-singh-bindra-2a4bb0193/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/Jashan01"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="/media/team/images/Prikshit_Batra_-_PRIKSHIT_BATRA.jpg" alt="Prikshit Batra">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Prikshit Batra
+                                </h6>
+                                <p class="small-text color-main">
+                                    GENERAL SECRETARY
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/prikshit-batra/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/PrikshitBatra"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="/media/team/images/Gaurang_Agrawal.jpeg" alt="Gaurang Agrawal">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Gaurang Agrawal
+                                </h6>
+                                <p class="small-text color-main">
+                                    JOINT SECRETARY
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/a-gaurang/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/gaurang-hub"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="/media/team/images/Ishita_Lyall.jpeg" alt="Ishita Lyall">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Ishita Lyall
+                                </h6>
+                                <p class="small-text color-main">
+                                    JOINT SECRETARY
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/isha-lyall-a0a434190/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/ishita-lyall"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+                    <div class="col-md-12 text-center" id="core">
+                        <h1><span style="font-weight: bold">CORE</span></h1>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="{% static 'Home/images/sanyam.jpeg' %}" alt="Samarth Jain">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Sanyam Goyal
+                                </h6>
+                                <p class="small-text color-main">
+                                    CORE EXECUTIVE
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/samarth-jain-0441161b4"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/SamarthJain21"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="{% static 'Home/images/himanshu.jpeg' %}" alt="Samik Malhotra">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Himanshu Garg
+                                </h6>
+                                <p class="small-text color-main">
+                                    CORE EXECUTIVE
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/samik-malhotra-51279a17b/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/Samikmalhotra"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="{% static 'Home/images/lokesh.jpeg' %}" alt="Sankalp Sahu">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                    Lokesh Mehta
+                                </h6>
+                                <p class="small-text color-main">
+                                    CORE EXECUTIVE
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/sankalp-sahu-72b0ba187/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/pehchankon"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="vertical-item ls ms content-padding text-center">
+                            <div class="item-media">
+                                <img src="{% static 'Home/images/hitesh.jpeg' %}" alt="Shivam Taneja">
+                            </div>
+                            <div class="item-content">
+                                <h6>
+                                   Hitesh Jain
+                                </h6>
+                                <p class="small-text color-main">
+                                    CORE EXECUTIVE
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.linkedin.com/in/shivam-taneja-409a961b6/"
+                                        class="fa fa-linkedin color-icon bg-icon rounded-icon" title="linkedin"></a>
+                                    <a href="https://github.com/ramen-7"
+                                        class="fa fa-github color-icon bg-icon rounded-icon" title="github"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                  
+
+
+               
+
+
+
+
+                    <div class="d-none d-lg-block divider-75"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+  
+        <section class="page_copyright light-copy cs s-py-20 s-py-lg-5 s-parallax copyright"
+            style="background-position: 50% 1px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="divider-20 d-none d-lg-block"></div>
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <span class="copyright_year"></span> Learn Code Collaborate
+                        </p>
+                    </div>
+                    <div class="divider-20 d-none d-lg-block"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- eof #box_wrapper -->
+</div>
+</body>
+</html>

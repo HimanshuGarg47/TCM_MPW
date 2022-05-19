@@ -26,7 +26,7 @@
                                  <span>Welcome to</span>
                                  <h1>Thaparians Coding Mania</h1>
                                  <p>Join in for a free and self-paced journey through a tailored selection of Coding Club tutorials, quizzes and practical challenges and the chance to get a certificate for your work. </p>
-                                 <a href="#">Read More </a> <a href="#">Register</a>
+                                 <a href="http://tpc.ac.in/" target="_blank">Read More </a> <a href="{% url 'signup' %}">Register</a>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -123,7 +123,7 @@
                   </div>
                </div>
                <div class="col-md-12">
-                  <a class="read_more" href="#">Read More</a>
+                  <a class="read_more" href="https://cses.fi/book/book.pdf" target="_blank">Read More</a>
                </div>
             </div>
          </div>
@@ -225,7 +225,8 @@
             </div>
             <div class="row">
                <div class="col-md-6">
-                  <form id="request" class="main_form">
+                  <form  action= "" method = "post" id="request" class="main_form">
+                     {% csrf_token %}
                      <div class="row">
                         <div class="col-md-12 ">
                            <input class="contactus" placeholder="Name" type="type" name="Name"> 
@@ -234,10 +235,10 @@
                            <input class="contactus" placeholder="Email" type="type" name="Email"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           <input class="contactus" placeholder="Phone Number" type="type" name="PNumber">                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                           <textarea class="textarea" placeholder="Message" type="type" name="message" Message="Name">Message </textarea>
                         </div>
                         <div class="col-sm-col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <button class="send_btn">Send</button>

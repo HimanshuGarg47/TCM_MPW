@@ -1,25 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-
-
 {% block title %}
-Add Post
+Edit Blog Post
 {% endblock title %}
 
 
 {% block css_files %}
 <link rel="stylesheet" href="{% static 'Blog/style.css' %}">
-
 {% endblock%}
 
 
 {% block content %}
-<div class="container">
+<div class="container update_post">
 
 <br>
-    <h1> Add Blog Post</h1>
+    <h1> Update.. Blog Post</h1>
     <div class="form-group">
 
    
@@ -27,7 +23,7 @@ Add Post
         {% csrf_token %}
         {{ form.as_p }}
         <br>
-        <button class="btn btn-secondary" type="submit">Post </button>
+        <button class="btn btn-secondary" type="submit">Update </button>
     </form>
 </div>
 </div>

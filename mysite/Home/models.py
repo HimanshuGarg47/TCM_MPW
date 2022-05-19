@@ -9,3 +9,9 @@ class Enquiry(models.Model):
     email_address = models.EmailField()
     phone = PhoneNumberField(null=False, blank=False, unique=True)
     content = models.TextField(validators=[MinLengthValidator(10)])
+
+    
+    def __str__(self):
+        return self.name + " | " + str(self.email_address)
+    
+    

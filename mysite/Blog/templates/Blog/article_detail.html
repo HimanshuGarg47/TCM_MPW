@@ -19,11 +19,11 @@
 <div class="container detail">
 
 
-  <h1>{{ post.title }}</h1>
-  <small>By: {{ post.author.first_name}} {{ post.author.last_name }}</small>
+  <p class="h1">{{ post.title }}</p>
+  <p class="h5">By: {{ post.author.first_name}} {{ post.author.last_name }} - {{ post.date }} - <a href="{% url 'updatepost' post.pk  %}">(Edit)</a> &nbsp; <a href="{% url 'deletepost' post.pk  %}">(Delete)</a></p>
   <br>
   <hr>
-  <p> {{ post.body }}</p>
+  <p class="h2"> {{ post.body }}</p>
   <br>
   <a class="btn btn-secondary" href="{% url 'blog_home' %}">Back</a>
 </div>

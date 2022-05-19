@@ -5,7 +5,7 @@
 
 
 {% block title %}
-Add Post
+Delete Post
 {% endblock title %}
 
 
@@ -16,18 +16,21 @@ Add Post
 
 
 {% block content %}
-<div class="container">
+<div class="container delete_post">
 
 <br>
-    <h1> Add Blog Post</h1>
+    <h1> Delete Post...</h1>
+    <br>
+    <h3>Delete: {{ post.title }} </h3>
     <div class="form-group">
 
    
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
         <br>
-        <button class="btn btn-secondary" type="submit">Post </button>
+        <strong>Are you sure!</strong>
+        <br>
+        <button class="btn btn-secondary" type="submit">Delete </button>
     </form>
 </div>
 </div>
