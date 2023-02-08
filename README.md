@@ -5,10 +5,8 @@ TCM Website is the coding club website of Thapar Polytechnic College
 Clone the TCM_Official.git
 ```bash
 git clone https://github.com/HimanshuGarg47/TCM_Official.git
-cd TCM_Official
 cd TCM_MPW
-python -m venv virt
-virt/Scripts/activate
+TCM/virt/Scripts/activate
 cd mysite
 pip install -r requirements.txt
 python manage.py runserver

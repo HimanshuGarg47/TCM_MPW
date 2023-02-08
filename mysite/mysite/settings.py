@@ -21,9 +21,9 @@ EMAIL_USE_TLS = EMAIL_USE_TLS
 
 EMAIL_HOST = EMAIL_HOST
 
-EMAIL_HOST_USER = EMAIL_HOST_USER
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 EMAIL_PORT = EMAIL_PORT
 
@@ -39,6 +39,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
+TWILIO_NUMBER = os.environ.get("TWILIO_NUMBER")
+SMS_BROADCAST_TO_NUMBERS = [ 
+    "+918437389759",
+    "+917340743409"
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -51,6 +60,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+     'phonenumber_field',
+     'django_twilio',
+     'twilio',
 ]
 
 MIDDLEWARE = [

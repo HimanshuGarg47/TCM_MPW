@@ -19,7 +19,7 @@
 <ol >
   {% for post in object_list %}
   <li><a class="title" href="{% url 'detailpost' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}
-    {{ post.author.last_name }} {{ post.author.email}} - <small><a href="{% url 'updatepost' post.pk  %}">(Edit)</a> &nbsp; 
+    {{ post.author.last_name }} {{ post.author.email}} - {{ post.date }} - <small><a href="{% url 'updatepost' post.pk  %}">(Edit)</a> &nbsp; 
       <a href="{% url 'deletepost' post.pk  %}">(Delete)</a>  </small> <br>
     {{ post.body }}</li>
     {% empty %}

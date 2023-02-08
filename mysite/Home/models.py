@@ -7,7 +7,7 @@ from django.core.validators import MinLengthValidator
 class Enquiry(models.Model):
     name = models.CharField(max_length=100)
     email_address = models.EmailField()
-    phone = PhoneNumberField(null=False, blank=False, unique=True)
+    phone = PhoneNumberField(null=False, blank=False)
     content = models.TextField(validators=[MinLengthValidator(10)])
 
     

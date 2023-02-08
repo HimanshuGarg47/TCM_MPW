@@ -98,6 +98,13 @@
                            <li class="nav-item">
                               <a class="nav-link" href="{% url 'add_post' %}">Add Blog</a>
                            </li>
+
+
+                           <!-- {% if user.is_authenticated %}
+                           <li class="nav-item">
+                              <a class="nav-link" href="{% url 'quiz' %}">Add Quiz</a>
+                           </li>
+                          {% endif %} -->
                         </ul>
                      </div>
                   </nav>
@@ -120,11 +127,13 @@
                   </div> -->
 
 
-               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 text-right">
+               <div class="col-xl-4 col-lg-3 col-md-4 col-sm-4 text-right">
                   {% if user.is_authenticated %}
-                  <h2><strong>Welcome {{ fname }}</strong></h2>
+                  <h4><strong>Welcome {{ fname }}</strong></h4>
 
-                 <a href="{% url 'signout' %}" class="me-2"><button type="button" class="btn btn-primary btn-lg">Signout</button></a>
+                 <a href="{% url 'signout' %}" class="me-1"><button type="button" class="btn btn-primary btn-lg">Signout</button></a>
+                 <!-- <a href="{% url 'quiz' %}" class="me-1"><button type="button" class="btn btn-primary btn-lg">Add Quiz</button></a> -->
+
                   <!-- <a href="/signout/">SignOut</a></button> -->
                   {% else %}
 
